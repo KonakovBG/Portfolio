@@ -1,0 +1,92 @@
+body{
+	margin:0;
+	padding:0;
+	background: url(background.jpg);	
+	
+
+}
+h1{
+	border-bottom: solid;
+	width: 10%
+	height: 10px;
+	border-color: black;
+}
+#contact-form{	
+	width: 25%;
+	align-content: center;
+	float: center;
+	margin: 50px 35%;
+	padding-top: 25px;	
+	text-align: center;
+	padding: 3%;
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	box-shadow: 2px;	
+
+}
+.row{
+	display: block;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	
+}
+.row label{
+	display: block;
+	margin: 10px;
+	text-align: left;
+
+}
+.row input{
+	width: 100%;
+	padding: 5px;
+	background: none;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	display: inline-block;
+}
+.row textarea{
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	resize:none;
+	width: 100%;	
+	outline: none;
+	background: none;
+	border:none;
+}
+#button-row button{
+	border: solid;
+	border-width: 2px;
+	border-radius: 8px;
+	width: 80px;
+	height: 100%;
+}
+#button-row{
+	height: 50px;
+	border: none;
+	background- color: black;
+}
+.response{
+	margin-top: 10px;
+}
+
+.row:hover{
+	box-shadow: 0 0 10px #FF8C00;
+}
+#button-row button:hover{
+	cursor: pointer;
+	background-color: #DCDCDC;
+	transition-duration: 0.5s;
+
+
+}
+.form-success{
+	color: green;
+}
+.form-error{
+	color: red;
+}
+
+

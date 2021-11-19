@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+
+	<link rel="stylesheet" type="text/css" href="css/contact-style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+
+	<link rel="stylesheet" id="dashicons-css" href="https://colorlib.com/tyche/wp-includes/css/dashicons.min.css?ver=5.5.1" type="text/css" media="all">
+</head>
+<body>
+	<div class="header">
+		<div class="header__container">
+			<ul class="header__email">
+				<i class="fa fa-envelope-o"></i>
+				
+				<li>flyass@gmail.com</li>
+			</ul>
+
+			<ul class="header__cart">
+				<i class="fa fa-shopping-cart"></i>
+
+				<a href="index.html">My Cart - 0$</a>
+			</ul>
+
+			<ul class="header__account">	
+				<i class="fa fa-user"></i>
+				
+				<li>Account</li>	
+			</ul>
+
+			<ul class="header__search">
+				<input type="text" name="header__search" placeholder="Search..." >
+
+				<button id="header__search-button" type="submit">
+
+					<i class="fa fa-search"></i>
+
+				</button>
+				
+			</ul>
+		</div>		
+	</div>
+
+	<div class="navigation">
+		<div class="navigation__logo">
+			<a href="/lessons/PSD 3/index.html">
+				<img width="165" height="70" src="css/logo/logo.png" class="navigation__logo-img" >
+			</a>
+
+			<span class="navigation__logo-border" ></span>
+		</div>
+
+		<div class="navigation__menu">
+			<ul>
+				<a href="index.html"><li>HOME</li></a>
+				<a href="shop.html"><li>SHOP</li></a>
+				<a href="blog.html"><li>BLOG</li></a>
+				<a href="contact.html"><li class="navigation__menu-contact">CONTACT</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="nav-buttons">
+		<a href="index.html" class="navigation-home">Home</a>
+
+		<p class="navigation-shop">/Contact</p>
+	</div>
+
+	<div class="main__contact">
+		<div class="main__contact-container">
+			<h1>Contact</h1>
+			<div class="contact__info">
+				<p>Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren n</p>
+			</div>
+			
+
+			<div class="contact__icons">
+				<i class="fa fa-mobile"></i>
+
+				<p class="contact__icons-header">GIVE US A CALL</p>
+
+				<p>0123456789</p>	
+			</div>
+
+			<div class="contact__icons">
+				<i class="fa fa-map-marker"></i>
+
+				<p class="contact__icons-header">OUR LOCATION</p>
+
+				<p>0123456789</p>	
+			</div>
+		</div>
+	</div>
+
+	<div class="contact__form">
+		<div class="contact__form-name">
+			<label for="name">Your Name (required)</label>
+
+			<input type="input" name="name" >
+		</div>
+
+		<div class="contact__form-email">
+			<label for="email">Your Email (required)</label>
+
+			<input type="input" name="email" >
+		</div>
+
+		<div class="contact__form-subject">
+			<label for="subject">Subject</label>
+
+			<input type="input" name="subject" >
+		</div>
+
+		<div class="contact__form-message">
+			<label for="message">Your Message</label>
+
+			<input type="input" name="message" >
+		</div>
+
+		<button class="contact__form-submit">Send</button>	
+	</div>
+
+	<div class="location__map">
+		<div id="googleMap" style="width:800px;height:350px;"></div>
+
+			<script>
+			function myMap() {
+			var mapProp= {
+			  center:new google.maps.LatLng(43.229947, 27.883043),
+			  zoom:5,
+			};
+			var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			}
+			</script>
+
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyrMZ24ENjKaj8v2zYFctdk0xn1JLjV2M&callback=myMap"></script>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Black Top</title>
+
+	<link rel="stylesheet" type="text/css" href="css-products/product.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+
+	<link rel="stylesheet" id="dashicons-css" href="https://colorlib.com/tyche/wp-includes/css/dashicons.min.css?ver=5.5.1" type="text/css" media="all">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="header__container">
+			<ul class="header__email">
+				<i class="fa fa-envelope-o"></i>
+				
+				<li>flyass@gmail.com</li>
+			</ul>
+
+			<ul class="header__cart">
+				<i class="fa fa-shopping-cart"></i>
+
+				<a href="index.html">My Cart - 0$</a>
+			</ul>
+
+			<ul class="header__account">	
+				<i class="fa fa-user"></i>
+				
+				<li>Account</li>	
+			</ul>
+
+			<ul class="header__search">
+				<input type="text" name="header__search" placeholder="Search..." >
+
+				<button id="header__search-button" type="submit">
+
+					<i class="fa fa-search"></i>
+
+				</button>
+				
+			</ul>
+		</div>		
+	</div>
+
+	<div class="navigation">
+		<div class="navigation__logo">
+			<a href="/lessons/PSD 3/index.html">
+				<img width="165" height="70" src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/logo.png" class="navigation__logo-img" >
+			</a>
+
+			<span class="navigation__logo-border" ></span>
+		</div>
+
+		<div class="navigation__menu">
+			<ul>
+				<a href="/lessons/PSD 3/index.html"><li>HOME</li></a>
+				<a href="/lessons/PSD 3/shop.html"><li>SHOP</li></a>
+				<a href="/lessons/PSD 3/blog.html"><li>BLOG</li></a>
+				<a href="/lessons/PSD 3/contact.html"><li>CONTACT</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="nav-buttons">
+		<a href="/lessons/PSD 3/index.html" style="text-decoration: none;"class="navigation-home">Home</a>
+
+		<a href="/lessons/PSD 3/shop.html" style="text-decoration: none;" class="navigation-shop">/Shop</a>
+	</div>
+
+	<div class="main__product">
+		<div class="main__product-container">
+			<div class="container__image">
+				<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/woman-1211441_1920.jpg" width="600px" height="600px;">
+			</div>
+
+			<div class="product__info">
+				<h1>Alani T-Shirt</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<h2>35.00$</h2>
+
+				<div class="quantity"><input type="number" min="0" max="9" step="1" value="0">
+
+				</div>
+
+				<script type="text/javascript">
+					jQuery('<div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div>').insertAfter('.quantity input');
+			    		jQuery('.quantity').each(function () {
+				        var spinner = jQuery(this),
+				        input = spinner.find('input[type="number"]'),
+				        btnUp = spinner.find('.quantity-up'),
+				        btnDown = spinner.find('.quantity-down'),
+				        min = input.attr('min'),
+				        max = input.attr('max');
+
+				        btnUp.click(function () {
+				            var oldValue = parseFloat(input.val());
+				            if (oldValue >= max) {
+				                var newVal = oldValue;
+				            } else {
+				                var newVal = oldValue + 1;
+				            }
+				            spinner.find("input").val(newVal);
+				            spinner.find("input").trigger("change");
+				        });
+
+				        btnDown.click(function () {
+				            var oldValue = parseFloat(input.val());
+				            if (oldValue <= min) {
+				                var newVal = oldValue;
+				            } else {
+				                var newVal = oldValue - 1;
+				            }
+				            spinner.find("input").val(newVal);
+				            spinner.find("input").trigger("change");
+				        });
+
+	    			});
+				</script>
+
+				<button class="product__add-to-cart">Add to Cart</button>
+			</div>
+		
+		</div>
+	</div>
+
+	<div class="product__description">
+		<button class="description__button" onclick="DescriptionOpen()">Description</button>
+
+		<button class="reviews__button" onclick="ReviewsOpen()">Reviews</button>
+
+		<div class="description" id="description">
+			<h1>Description</h1>
+
+			<p>Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no.<br><br>
+
+			Ex soleat habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no.</p>
+		</div>
+
+		<div class="reviews" id="reviews">
+			<h1>Reviews</h1>
+
+			<p>There are no reviews yet.<br><br>
+
+				Be the first to review "Black Top"<br><br>
+				Your email address will not be published. Required fields are marked *<br><br>
+
+				Your rating *
+
+				
+			</p>
+
+			<div class="review__form">
+				<label for="review__text">Your review*</label>
+
+				<input type="text" name="review__text" class="review__text-input">
+
+				<div class="personal__data-name">
+					<label for="review__name">Name*</label>
+
+					<input type="text" name="">
+				</div>
+
+				<div class="personal__data-email">
+					<label for="review__email">Email*</label>
+
+					<input type="text" name="email">
+
+					<button>Submit</button>
+				</div>
+				
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			function DescriptionOpen(){
+				document.getElementById("reviews").style.display='none';
+
+				document.getElementById("description").style.display='block';
+			}
+
+			function ReviewsOpen(){
+				document.getElementById("reviews").style.display='block';
+
+				document.getElementById("description").style.display='none';
+			}
+		</script>
+	</div>
+
+	<div class="featured__products">
+		<div class="featured__products-container">
+			<div class="featured__products-header">
+				<h1>FEATURED</h1>
+
+				<span class="featured__products-header-border"></span>
+						
+			</div>
+
+			<div class="featured__products-product1">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/cute-955782_1920-768x576.jpg">
+
+					<figcaption>
+						<a href="manago-shirt.html" style="text-decoration: none;"><p>Manago Shirt</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="featured__products-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="featured__products-product2">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/fashion-1283863_1920-768x519.jpg">
+
+					<figcaption>
+						<a href="blue-sweater.html" style="text-decoration: none;"><p>Blue Sweater</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="featured__products-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="featured__products-product3">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/person-1148941_1920-768x512.jpg">
+
+					<figcaption>
+						<a href="asabi-jeans.html" style="text-decoration: none;"><p>Asabi-Jeans</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="featured__products-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="featured__products-product4">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/fashion-984044_1920-768x512.jpg">
+
+					<figcaption>
+						<a href="merchantile-b.html" style="text-decoration: none;"><p>Merchantile-B</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="featured__products-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer__container">				
+			<div class="col1">
+				<h1>Meta</h1>
+
+				<span class="col1__header-border"></span>
+
+				<div class="col1__content">
+					<ul>
+						<li><i class="fa fa-arrow-right"></i>Register</li>
+						<li><i class="fa fa-arrow-right"></i>Log In</li>
+						<li><i class="fa fa-arrow-right"></i>Entries feed</li>
+						<li><i class="fa fa-arrow-right"></i>Comments feed</li>
+						<li><i class="fa fa-arrow-right"></i>WordPress.com</li>
+					</ul>
+				</div>
+						
+			</div> 	
+
+			<div class="col2">
+				<h1>Recent Posts</h1>
+
+				<span class="col2__header-border"></span>
+
+				<div class="col2__content">
+					<ul>
+						<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/down-jackets-1281699_1920-65x65.jpg">
+
+						<li>Jackets For The Soul. What Color Is Yours?</li>
+
+						<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/vibrant-641434_1920-65x65.jpg">
+
+						<li>Best Fabrics For Your Dream Dress!</li>
+
+						<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/stockings-428602_1920-65x65.jpg">
+
+						<li>Long Legs? No Longer A Myth! Check it out!</li>
+
+						<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/clothing-964878_1920-65x65.jpg">
+
+						<li>Latest Trends For Autumn Are Here!</li>
+						
+					</ul>
+				</div>					
+			</div>
+
+			<div class="col3">
+				<h1>About</h1>
+
+				<span class="col3__header-border"></span>
+
+				<div class="col3__content">
+					<p>Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam.</p>
+
+					<p>Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no.</p>
+				</div>
+			</div>
+
+			<div class="col4">
+				<h1>Tags</h1>
+
+				<span class="col4__header-border"></span>
+
+				<div class="col4__content">
+					<div class="buttons-row1">
+						<button>Autumn</button>
+						<button>dress</button>
+						<button>fashion</button>
+					</div>
+
+					<div class="buttons-row2">
+						<button>jackets</button>
+						<button>stockings</button>
+						<button>trends</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__information">
+		<div class="footer__information-container">
+			<div class="contact__icons">
+				<i class="fa fa-facebook"></i>
+
+				<i class="fa fa-twitter"></i>
+
+				<i class="fa fa-instagram"></i>
+
+				<i class="fa fa-vimeo"></i>
+
+				<i class="fa fa-youtube"></i>
+			</div>
+
+			<div class="footer__copyright">
+				<p>Copyright © 2020 | Theme: Tyche | Powered by WordPress. </p>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>

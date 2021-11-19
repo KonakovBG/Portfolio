@@ -1,0 +1,28 @@
+body{
+	background-color: #F3F4F6; margin: 0; 
+}
+a{
+	text-decoration: none; color: black !important; font-size: 18px !important;
+}
+
+.contact_content{
+	margin-top: 50px;
+}
+.header{
+	display: flex; flex-direction: row; justify-content: space-around;
+}
+.header button{
+	position: relative; right: 50px;margin-top: 15px;
+}
+.contact_form{
+	width: 700px; margin:auto;
+}
+
+
+
+
+
+
+
+
+

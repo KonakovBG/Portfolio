@@ -1,0 +1,30 @@
+body{
+	background-color: #F3F4F6; margin: 0; 
+}
+a{
+	text-decoration: none; color: black !important; font-size: 18px !important;
+}
+
+.contact_content{
+	margin-top: 50px;
+}
+.header{
+	display: flex; flex-direction: row; justify-content: space-around;
+}
+.header button{
+	position: relative; right: 40px;margin-top: 15px;
+}
+
+/*Contact Form*/
+
+#result{
+	color: red; font-size: 18px; width: 400px;margin: auto; margin-top: 30px;
+}
+.contact_form{
+	width: 700px;
+	margin: auto;
+}
+.contact_form input{
+	border: solid 1px grey; height: 30px; outline: none;
+}
+

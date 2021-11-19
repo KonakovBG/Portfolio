@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop</title>
+
+	<link rel="stylesheet" type="text/css" href="css/shop-style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+
+	<link rel="stylesheet" id="dashicons-css" href="https://colorlib.com/tyche/wp-includes/css/dashicons.min.css?ver=5.5.1" type="text/css" media="all">
+</head>
+<body>
+	<div class="header">
+		<div class="header__container">
+			<ul class="header__email">
+				<i class="fa fa-envelope-o"></i>
+				
+				<li>flyass@gmail.com</li>
+			</ul>
+
+			<ul class="header__cart">
+				<i class="fa fa-shopping-cart"></i>
+
+				<a href="index.html">My Cart - 0$</a>
+			</ul>
+
+			<ul class="header__account">	
+				<i class="fa fa-user"></i>
+				
+				<li>Account</li>	
+			</ul>
+
+			<ul class="header__search">
+				<input type="text" name="header__search" placeholder="Search..." >
+
+				<button id="header__search-button" type="submit">
+
+					<i class="fa fa-search"></i>
+
+				</button>
+				
+			</ul>
+		</div>		
+	</div>
+
+	<div class="navigation">
+		<div class="navigation__logo">
+			<a href="/lessons/PSD 3/index.html">
+				<img width="165" height="70" src="css/logo/logo.png" class="navigation__logo-img" >
+			</a>
+
+			<span class="navigation__logo-border" ></span>
+		</div>
+
+		<div class="navigation__menu">
+			<ul>
+				<a href="index.html"><li>HOME</li></a>
+				<a href="shop.html"><li class="navigation__menu-shop">SHOP</li></a>
+				<a href="blog.html"><li>BLOG</li></a>
+				<a href="contact.html"><li>CONTACT</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="nav-buttons">
+		<a href="index.html" class="navigation-home">Home</a>
+
+		<p class="navigation-shop">/Shop</p>
+	</div>
+
+	<div class="shop__sidebar">
+		<div class="shop__sidebar-search">
+			<input type="text" name="" placeholder="Search products...">
+
+			<button class="search-button">Search</button>
+		</div>
+
+		<div class="filter">
+			<p class="filter__header">Filter by Price</p>
+
+			<input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+
+			<p class="slider__value">Price: $<span id="demo"></span></p>
+
+			<button class="filter__button">Filter</button>
+
+			<script>
+				var slider = document.getElementById("myRange");
+				var output = document.getElementById("demo");
+				output.innerHTML = slider.value;
+
+				slider.oninput = function() {
+				  output.innerHTML = this.value;
+				}
+			</script>
+		</div>
+
+		<div class="sidebar__products">
+			<h1>Products</h1>
+
+			<div class="sidebar__products-product1">
+				<a href="products/marina-style.html" style="text-decoration: none;"><p>Marina Style</p></a>
+
+				<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/woman-1484279_1920-255x320.jpg">
+
+				<div class="stars">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+				</div>			
+
+				<p>35.00$</p>
+
+
+			</div>
+
+			<div class="sidebar__products-product2">
+				<a href="products/amari-shirt.html" style="text-decoration: none;"><p>Amari Shirt</p></a>
+
+				<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/key-692199_1920-255x320.jpg">
+
+				<div class="stars">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+				</div>			
+
+				<p>35.00$</p>
+
+
+			</div>
+
+			<div class="sidebar__products-product3">
+				<a href="products/sleeveless-dress.html" style="text-decoration: none;"><p>Marcara Sleeveless Dress</p></a>
+
+				<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/girl-in-white-dress-1333640_1920-255x320.jpg">
+
+				<div class="stars">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+				</div>			
+
+				<p>35.00$</p>
+
+
+			</div>
+			<div class="sidebar__products-product4">
+				<a href="products/manago-shirt.html" style="text-decoration: none;"><p>Manago Shirt</p></a>
+
+				<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/cute-955782_1920-255x320.jpg">
+
+				<div class="stars">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+				</div>			
+
+				<p>35.00$</p>
+
+
+			</div>
+
+			<div class="sidebar__products-product5">
+				<a href="products/blue-sweater.html" style="text-decoration: none;"><p>Blue Sweater</p></a>
+
+				<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/fashion-1283863_1920-255x320.jpg">
+
+				<div class="stars">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+				</div>			
+
+				<p>35.00$</p>
+
+
+			</div>
+		</div>
+
+		<div class="sidebar__products">
+			<h1>Top Rated Products</h1>
+
+			<div class="sidebar__products-product1">
+				<a href="products/sleeveless-dress.html" style="text-decoration: none;"><p>Marcara Sleeveless Dress</p></a>
+
+				<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/girl-in-white-dress-1333640_1920-255x320.jpg">
+
+				<div class="stars">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+				</div>			
+
+				<p>$55.00</p>
+
+
+			</div>
+
+			<div class="sidebar__products-product2">
+				<a href="products/alani-t-shirt.html" style="text-decoration: none;"><p>Alani T-Shirt</p></a>
+
+				<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/person-1148941_1920-255x320.jpg">
+
+				<div class="stars">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+				</div>			
+
+				<p>$10.00</p>
+
+
+			</div>
+
+			<div class="sidebar__products-product3">
+				<a href="products/asabi-jeans.html" style="text-decoration: none;"><p>Asabi-Jeans</p></a>
+
+				<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/belts-823257_1920-255x320.jpg">
+
+				<div class="stars">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+				</div>			
+
+				<p>35.00$</p>
+
+
+			</div>
+			<div class="sidebar__products-product4">
+				<a href="products/fitt-belts.html" style="text-decoration: none;"><p>FITT Belts</p></a>
+
+				<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/cute-955782_1920-255x320.jpg">
+
+				<div class="stars">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+				</div>			
+
+				<p>25.00$</p>
+
+
+			</div>
+
+			<div class="sidebar__products-product5">
+				<a href="products/blue-sweater.html" style="text-decoration: none;"><p>Blue Sweater</p></a>
+
+				<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/fashion-1283863_1920-255x320.jpg">
+
+				<div class="stars">
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star "></span>
+					<span class="fa fa-star "></span>
+				</div>			
+
+				<p>45.00$</p>
+
+
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="main__shop">
+
+			<h1>SHOP</h1>	
+			<div class="main__shop-product">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/woman-1211441_1920-255x320.jpg">
+
+					<figcaption>
+						<a href="products/alani-t-shirt.html" style="text-decoration: none;"><p>Alani T-Shirt</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="main__shop-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="main__shop-product">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/key-692199_1920-255x320.jpg">
+
+					<figcaption>
+						<a href="products/amari-shirt.html" style="text-decoration: none;"><p>Amari Shirt</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="main__shop-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="main__shop-product">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/a-neckerchief-1315916_1920-255x320.jpg">
+
+					<figcaption>
+						<a href="products/andora-scarf.html" style="text-decoration: none;"><p>Andora Scarf</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="main__shop-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="main__shop-product">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/person-1148941_1920-255x320.jpg">
+
+					<figcaption>
+						<a href="products/asabi-jeans.html" style="text-decoration: none;"><p>Asabi Jeans</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="main__shop-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="main__shop-product">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/high-heels-1327020_1920-255x320.jpg">
+
+					<figcaption>
+						<a href="products/beije-magawi-shoes.html" style="text-decoration: none;"><p>Beije Magawi Shoes</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="main__shop-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="main__shop-product">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/woman-1211442_1920-255x320.jpg">
+
+					<figcaption>
+						<a href="products/belka-t-shirt.html" style="text-decoration: none;"><p>Belka T-Shirt</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="main__shop-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="main__shop-product">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/woman-1477091_1920-255x320.jpg">
+
+					<figcaption>
+						<a href="products/black-top.html" style="text-decoration: none;"><p>Black Top</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="main__shop-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="main__shop-product">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/shoe-1040802_1920-255x320.jpg">
+
+					<figcaption>
+						<a href="products/blue-magawi-shoes.html" style="text-decoration: none;"><p>Blue Magawi Shoes</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="main__shop-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="main__shop-product">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/fashion-1283863_1920-255x320.jpg">
+
+					<figcaption>
+						<a href="products/blue-sweater.html" style="text-decoration: none;"><p>Blue Sweater</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="main__shop-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="main__shop-product">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/belts-823257_1920-255x320.jpg">
+
+					<figcaption>
+						<a href="products/fitt-belts.html" style="text-decoration: none;"><p>FITT Belts</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="main__shop-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+
+			<div class="main__shop-product">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/a-neckerchief-1317830_1920-255x320.jpg">
+
+					<figcaption>
+						<a href="products/istwic-scarf.html" style="text-decoration: none;"><p>Istwic Scarf</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="main__shop-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>	
+
+			<div class="main__shop-product">
+				<figure>
+					<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/a-neckerchief-1315912_1920-255x320.jpg">
+
+					<figcaption>
+						<a href="products/jeniffer-scarf.html" style="text-decoration: none;"><p>Jeniffer Scarf</p></a>
+
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star "></span>
+						<span class="fa fa-star "></span>
+
+						<h1>$25.00 </h1>
+
+						<button class="main__shop-add-to-cart"><i class="fa fa-shopping-cart"></i>
+							ADD TO CART
+						</button>
+					</figcaption>
+				</figure>
+			</div>
+
+	</div>
+
+	<div class="footer">
+		<div class="footer__container">
+			<div class="col1">
+				<h1>Meta</h1>
+
+				<span class="col1__header-border"></span>
+
+				<div class="col1__content">
+					<ul>
+						<li><i class="fa fa-arrow-right"></i>Register</li>
+						<li><i class="fa fa-arrow-right"></i>Log In</li>
+						<li><i class="fa fa-arrow-right"></i>Entries feed</li>
+						<li><i class="fa fa-arrow-right"></i>Comments feed</li>
+						<li><i class="fa fa-arrow-right"></i>WordPress.com</li>
+					</ul>
+				</div>
+						
+			</div> 	
+
+			<div class="col2">
+				<h1>Recent Posts</h1>
+
+				<span class="col2__header-border"></span>
+
+				<div class="col2__content">
+					<ul>
+						<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/down-jackets-1281699_1920-65x65.jpg">
+
+						<li>Jackets For The Soul. What Color Is Yours?</li>
+
+						<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/vibrant-641434_1920-65x65.jpg">
+
+						<li>Best Fabrics For Your Dream Dress!</li>
+
+						<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/stockings-428602_1920-65x65.jpg">
+
+						<li>Long Legs? No Longer A Myth! Check it out!</li>
+
+						<img src="https://colorlib.com/tyche/wp-content/uploads/sites/17/2017/06/clothing-964878_1920-65x65.jpg">
+
+						<li>Latest Trends For Autumn Are Here!</li>
+						
+					</ul>
+				</div>					
+			</div>
+
+			<div class="col3">
+				<h1>About</h1>
+
+				<span class="col3__header-border"></span>
+
+				<div class="col3__content">
+					<p>Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam.</p>
+
+					<p>Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no.</p>
+				</div>
+			</div>
+
+			<div class="col4">
+				<h1>Tags</h1>
+
+				<span class="col4__header-border"></span>
+
+				<div class="col4__content">
+					<div class="buttons-row1">
+						<button>Autumn</button>
+						<button>dress</button>
+						<button>fashion</button>
+					</div>
+
+					<div class="buttons-row2">
+						<button>jackets</button>
+						<button>stockings</button>
+						<button>trends</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__information">
+		<div class="footer__information-container">
+			<div class="contact__icons">
+				<i class="fa fa-facebook"></i>
+
+				<i class="fa fa-twitter"></i>
+
+				<i class="fa fa-instagram"></i>
+
+				<i class="fa fa-vimeo"></i>
+
+				<i class="fa fa-youtube"></i>
+			</div>
+
+			<div class="footer__copyright">
+				<p>Copyright © 2020 | Theme: Tyche | Powered by WordPress. </p>
+			</div>
+		</div>	
+	</div>
+	
+
+</body>
+</html>

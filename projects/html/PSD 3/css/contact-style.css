@@ -1,0 +1,251 @@
+*{
+	margin: 0;
+	font-family: 'Karla';
+
+}
+body{	
+	max-width: 100%;
+	overflow-x:hidden;
+}
+
+.header{
+	background-color: #2B2E34;
+}
+.header__container{
+	padding: 0 330px;
+	height: 50px;
+
+}
+.header__email li{
+	color: white;
+	font-family: 'Karla';
+	font-size: 15px;
+	float: left;
+	padding-top: 15px;
+	list-style-type: none;
+}
+.header__email i{
+	color: white;
+	float: left;
+	padding-top: 15px;
+	margin: 0;
+}
+.header__account{
+	float: right;
+	display: inline-block;
+	font-family: 'Karla';
+	font-size: 15px;
+	color: white;
+	padding-top: 15px;
+	list-style: none;
+}
+.header__account li{
+	display: inline-block;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.header__search i ,.header__account i ,.header__cart button ,.header__email i, {
+	margin:0 10px;
+	
+}
+
+.header__cart {
+	float: right;
+	display: inline-block;
+	font-family: 'Karla';
+	height: 50px;	
+	width: 150px;
+	background-color: #F66249;
+	border-style: none;
+	color: white;
+	cursor: pointer;
+}
+.header__cart:hover{
+	background-color: red;
+	transition-duration: 0.7s;
+}
+.header__cart a, .header__cart i{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+}
+.header__search{
+	float: right;
+	display: inline-block;
+	font-family: 'Karla';
+	font-size: 15px;
+	color: white;
+	padding-top: 10px;
+	list-style: none;
+}
+.header__search input{
+	background-color: #25262b;
+	border-style: none;
+	height: 30px;
+	display: inline-block;
+	font-family: 'Karla';
+	width: 167px;
+	outline: none;
+	font-size: 15px;
+
+}
+.header__search button{
+	background-color: #25262b;
+	color: white;
+	border-style: none;
+	height: 30px;
+	margin-left: 0;
+	cursor: pointer;
+}
+.navigation{
+	background-color: #25262B;
+	padding: 0 330px;
+	padding-top: 15px;
+}
+.navigation__logo img{
+	cursor: pointer;
+}
+.navigation__logo-border{
+	display: inline-block;
+	width: 100%;
+	height: 1px;
+	background-color: grey;
+}
+.navigation__menu ul{
+	display: inline-block;
+	color: white;
+	margin-top: 15px;
+	font-size: 18px;
+	font-family: 'Karla';
+	margin: 0;
+	padding: 0;
+	
+}
+.navigation__menu-contact{
+	color: #F66249;
+	cursor: pointer;
+}
+.navigation__menu ul a{
+	color: white;
+}
+.navigation__menu li:hover{
+	color: #F66249;
+	transition-duration: 0.7s;
+}
+.navigation__menu li{
+	display: inline-block;
+	padding: 15px 30px 15px 0;
+	cursor: pointer; 
+}
+.navigation__menu-home{
+	color: #F66249;
+	cursor: pointer;
+}
+
+.navigation-shop {
+	display: inline-block;
+	color: grey;
+	font-size: 14px;
+}
+.navigation-home{
+	text-decoration: none;
+	color: grey;
+	font-size: 14px;
+
+}
+.navigation-home:hover{
+	color: #F66249;
+	transition-duration: 0.5s;
+	cursor: pointer; 
+}
+.nav-buttons{
+	padding: 0 330px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+.main__contact{
+	padding: 0 330px;
+
+}
+.contact__form{
+	display: inline-block;
+}
+.contact__info p{
+	margin-top: 20px;
+	max-width: 600px;
+	font-family: 'Karla';
+	color: rgb(113,113,140);
+	line-height: 1.5;
+}
+.contact__info{
+	display: inline-block;
+	margin-right: 50px;
+}
+.contact__icons,.contact__icons i{
+	display: inline-block;
+}
+.contact__icons i{
+	font-size: 24px;
+	background-color: rgb(42,49,62);
+	color: white;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	padding-top: 10px;
+	position: relative;
+	top: 25px;
+}
+.contact__icons p{
+	position: relative;
+	left: 50px;
+	bottom: 25px;
+}
+.contact__icons-header{
+	font-size: 20px;
+}
+.contact__icons {
+	margin-right: 160px;
+}
+.contact__form{
+	padding: 0 330px;
+	margin-top: 50px;
+}
+.contact__form input{
+	display: block;
+	width: 380px;
+	height: 30px;
+	border-color:rgb(204,204,204)
+	border-width: 1px;
+}
+.contact__form label{
+	color: rgb(113,118,122);
+	font-size: 18px;
+}
+.contact__form-message input{
+	height: 80px;
+}
+.contact__form-submit{
+	margin-top: 30px;
+}
+.contact__form-submit{
+	background-color: #F66249;
+	color: white;
+	border-style: none;
+	height: 40px;
+	width: 100px;
+	margin-left: 0;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.location__map{
+	display: inline-block;
+	position: relative;
+	margin-top: 30px;
+	right: 230px;
+}
+
+
+
+
