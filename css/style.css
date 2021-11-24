@@ -50,7 +50,7 @@ p {
 *****************/
 
 .section {
-    padding-top: 90px !important;
+    padding-top: 40px !important;
     padding-bottom: 90px !important;
     position: relative;
 }
@@ -593,6 +593,7 @@ p {
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+    display: none;
 }
 
 /******************
@@ -776,3 +777,4 @@ p {
     width:  1150px;
     height: 800px;
 }
+

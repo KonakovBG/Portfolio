@@ -1,5 +1,7 @@
 <?php
 
+require_once "vendor/autoload.php";
+
 if(!$_POST) exit;
 
 function isEmail($email) {
@@ -32,7 +34,7 @@ if(get_magic_quotes_gpc()) {
 	$comments = stripslashes($comments);
 }
 
-$address = "svetoslav.konakov@gmail.com";
+$address = "svetoslav.konakov@abv.bg";
 
 $e_subject = 'You have been contacted by ' . $name . '.';
 
