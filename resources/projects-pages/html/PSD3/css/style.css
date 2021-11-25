@@ -1,0 +1,52 @@
+.shell{
+	margin: 0 300px;
+}
+
+.project{
+	margin-top: 200px;
+}
+
+.header{
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.content{
+	display: flex;
+	flex-direction: row;
+	height: 400px;
+}
+
+.image-code img{
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+}
+
+.image-arrow{
+	margin: 0 110px;
+}
+.image-arrow svg{
+	width: 300px;
+	padding-top: 110px;
+}
+.image-page img{
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+}
+
+.description{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.green-list ul,.red-list ul{
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+.text{
+	color: #FFFFFF;
+}

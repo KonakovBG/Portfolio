@@ -1,6 +1,8 @@
 <?php
 
-require_once "vendor/autoload.php";
+require_once "../vendor/autoload.php";
+
+use PHPMailer\PHPMailer\PHPMailer;
 
 if(!$_POST) exit;
 
@@ -13,6 +15,7 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 	$name     = $_POST['name'];
 	$email    = $_POST['email'];
 	$comments = $_POST['comments'];
+	$subject  = $_POST['subject'];
 
 if(trim($name) == '') {
 	echo '<div class="error_message">You must enter your name.</div>';
@@ -44,23 +47,33 @@ $e_reply = "You can contact $name via email, $email";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
-$headers = "From: $email" . PHP_EOL;
-$headers .= "Reply-To: $email" . PHP_EOL;
-$headers .= "MIME-Version: 1.0" . PHP_EOL;
-$headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
-$headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
+$phpmailer = new PHPMailer();
+$phpmailer->isSMTP();
+$phpmailer->Host = 'smtp.mailtrap.io';
+$phpmailer->SMTPAuth = true;
+$phpmailer->Port = 2525;
+$phpmailer->Username = 'fd905b93d603c0';
+$phpmailer->Password = '0dced76f01dbeb';
+$phpmailer->SMTPSecure = 'tls';
+$phpmailer->isHTML(true);
 
-if(mail($address, $e_subject, $msg, $headers)) {
+$phpmailer->setFrom($email);
+$phpmailer->Subject = $subject;
+$phpmailer->addReplyTo('info@mailtrap.io', 'Mailtrap');
+$phpmailer->addAddress('svetoslav.konakov@gmail.com');
 
-	// Email has sent successfully, echo a success page.
+$mailContent = $comments;
+$phpmailer->Body = $mailContent;
 
-	echo "<fieldset>";
+if($phpmailer->send()){
+    echo "<fieldset>";
 	echo "<div id='success_page'>";
 	echo "<h3>Email Sent Successfully.</h3>";
 	echo "<p>Thank you <strong>$name</strong>, your message has been sent.</p>";
 	echo "</div>";
 	echo "</fieldset>";
 
-} else {
-	echo 'ERROR!!';
+}else{
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $phpmailer->ErrorInfo;
 }
